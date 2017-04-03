@@ -9,6 +9,11 @@ RUN apt-get update \
 		make \
 		git \
 		libpcre3-dev \
+		g++ \
+		python \
+		build-essential \
+		libsasl2-2 \
+		openssl \
 	&& rm -r /var/lib/apt/lists/*
 
 WORKDIR /opt
