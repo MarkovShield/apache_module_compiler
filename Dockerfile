@@ -8,6 +8,7 @@ RUN apt-get update \
 		libpcre3-dev \
 		make \
 		git \
+		libpcre3-dev \
 	&& rm -r /var/lib/apt/lists/*
 
 WORKDIR /opt
