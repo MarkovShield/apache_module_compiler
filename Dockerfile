@@ -14,6 +14,8 @@ RUN apt-get update \
 		build-essential \
 		libsasl2-2 \
 		openssl \
+		zlib1g-dev \
+		zlibc \
 	&& rm -r /var/lib/apt/lists/*
 
 WORKDIR /opt
