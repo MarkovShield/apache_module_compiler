@@ -18,6 +18,7 @@ RUN apt-get update \
 		zlibc \
 		libhiredis-dev \
 		libhiredis0.10 \
+		libevent-dev \
 	&& rm -r /var/lib/apt/lists/*
 
 WORKDIR /opt
