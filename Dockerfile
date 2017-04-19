@@ -16,6 +16,8 @@ RUN apt-get update \
 		openssl \
 		zlib1g-dev \
 		zlibc \
+		libhiredis-dev \
+		libhiredis0.13 \
 	&& rm -r /var/lib/apt/lists/*
 
 WORKDIR /opt
