@@ -17,7 +17,7 @@ RUN apt-get update \
 		zlib1g-dev \
 		zlibc \
 		libhiredis-dev \
-		libhiredis0.13 \
+		libhiredis0.10 \
 	&& rm -r /var/lib/apt/lists/*
 
 WORKDIR /opt
