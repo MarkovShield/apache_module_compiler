@@ -21,4 +21,12 @@ RUN apt-get update \
 		libevent-dev \
 	&& rm -r /var/lib/apt/lists/*
 
+RUN git config --global http.sslVerify false
+RUN git clone https://github.com/edenhill/librdkafka \
+	&& cd librdkafka \
+	&& ./configure \
+  && make \
+  && make install
+
+
 WORKDIR /opt
